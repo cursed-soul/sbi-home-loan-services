@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+        <link rel="stylesheet" href="/w3css/3/w3.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>SBI Home Loan Services</title>
+                
+        <style>
+            button{
+                align-items: right;
+            }
+            body {
+                padding: 25px;
+                background-color: #181a81fb;
+                color: whitesmoke;
+                font-size: 25px;
+            }
+  
+            .dark-mode {
+                background-color: black;
+                color: white;
+            }
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+            #main {
+                transition: margin-left .5s;
+                padding: 16px;
+            }
+
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+            .mySlides {display: none;}
+            img {vertical-align: middle;}
+
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            /* Caption text */
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active {
+                background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+x
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+                .text {font-size: 11px}
+            }
+            footer{
+                text-align: center;
+            }
+            header{
+                text-align: left;
+                
+            }
+            .form-all {
+                  font-family: Lucida Grande, sans-serif;
+                }
+                .form-all .qq-upload-button,
+                .form-all .form-submit-button,
+                .form-all .form-submit-reset,
+                .form-all .form-submit-print {
+                  font-family: Lucida Grande, sans-serif;
+                }
+                .form-all .form-pagebreak-back-container,
+                .form-all .form-pagebreak-next-container {
+                  font-family: Lucida Grande, sans-serif;
+                }
+                .form-header-group {
+                  font-family: Lucida Grande, sans-serif;
+                }
+                .form-label {
+                  font-family: Lucida Grande, sans-serif;
+                }
+              
+                .form-label.form-label-auto {
+                  
+                display: inline-block;
+                float: left;
+                text-align: left;
+              
+                }
+                .form-label-left{
+                    width:150px;
+                }
+                .form-line{
+                    padding-top:12px;
+                    padding-bottom:12px;
+                }
+                .form-label-right{
+                    width:150px;
+                }
+                .form-all{
+                    width:690px;
+                    color:#555 !important;
+                    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+                    font-size:14px;
+                }
+                .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+                    color: false;
+                }
+                .form-line {
+                  margin-top: 12px 36px 12px 36px px;
+                  margin-bottom: 12px 36px 12px 36px px;
+                }
+              
+                .form-all {
+                  max-width: 690px;
+                  width: 100%;
+                }
+              
+                .form-label.form-label-left,
+                .form-label.form-label-right,
+                .form-label.form-label-left.form-label-auto,
+                .form-label.form-label-right.form-label-auto {
+                  width: 150px;
+                }
+              
+                .form-all {
+                  font-size: 14px
+                }
+                .form-all .qq-upload-button,
+                .form-all .qq-upload-button,
+                .form-all .form-submit-button,
+                .form-all .form-submit-reset,
+                .form-all .form-submit-print {
+                  font-size: 14px
+                }
+                .form-all .form-pagebreak-back-container,
+                .form-all .form-pagebreak-next-container {
+                  font-size: 14px
+                }
+              
+                .supernova .form-all, .form-all {
+                  background-color: #fff;
+                  border: 1px solid transparent;
+                }
+              
+                .form-all {
+                  color: #555;
+                }
+                .form-header-group .form-header {
+                  color: #555;
+                }
+                .form-header-group .form-subHeader {
+                  color: #555;
+                }
+                .form-label-top,
+                .form-label-left,
+                .form-label-right,
+                .form-html,
+                .form-checkbox-item label,
+                .form-radio-item label {
+                  color: #555;
+                }
+                .form-sub-label {
+                  color: #6f6f6f;
+                }
+              
+                .supernova {
+                  background-color: undefined;
+                }
+                .supernova body {
+                  background: transparent;
+                }
+              
+                .form-textbox,
+                .form-textarea,
+                .form-radio-other-input,
+                .form-checkbox-other-input,
+                .form-captcha input,
+                .form-spinner input {
+                  background-color: undefined;
+                }
+              
+                .supernova {
+                  background-image: none;
+                }
+                #stage {
+                  background-image: none;
+                }
+              
+                .form-all {
+                  background-image: none;
+                }
+              
+            
+                .form-all {
+                  position: relative;
+                }
+                .form-all:before {
+                  content: "";
+                  background-image: url("https://www.jotform.com/uploads/guest_842558f238fc11b6/form_files/SBI-Logo.5f0061d55a4be9.67691202.png");
+                  display: inline-block;
+                  height: 140px;
+                  position: absolute;
+                  background-size: 249px 140px;
+                  background-repeat: no-repeat;
+                  width: 100%;
+                }
+                .form-all {
+                  margin-top: 150px !important;
+                }
+                .form-all:before {
+                  top: -150px;
+                  background-position: top center;
+                }
+                       
+              .ie-8 .form-all:before { display: none; }
+              .ie-8 {
+                margin-top: auto;
+                margin-top: initial;
+              }
+              
+              /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+                /* Injected CSS Code */
+            
+            
+        </style>
+         
+    </head>
+    <body>
+        <header class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+            
+            <!-- Navigation -->
+            <nav class="w3-bar w3-black">
+            <div style="text-align: right;">
+            <button onclick="myFunction()">dark mode</button></div>
+            <script>
+                function myFunction() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                } 
+            </script>
+            
+
+           
+            
+            
+             </nav>
+        </header>
+        
+         <h1>SBI Home Loan Services</h1>
+         <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Clients">Clients</a>
+            <a href="#Contact">Contact</a>
+            <a href="#Queries">Queries</a>
+            
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                document.body.style.backgroundColor = "white";
+            }
+        </script>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="sbi.jpeg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="123.jpeg" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="hl.jpeg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+        </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+            <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+            <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.18877" type="text/javascript"></script>
+            <script type="text/javascript">
+              JotForm.init(function(){
+                  JotForm.description('input_10', 'Enter Your Name');
+                  setTimeout(function() {
+                      $('input_11').hint('ex: myname@example.com');
+                   }, 20);
+                  JotForm.description('input_11', 'Enter Your Email');
+                  JotForm.description('input_12', 'Enter Your Phone Number');
+            if (window.JotForm && JotForm.accessible) $('input_6').setAttribute('tabindex',0);
+                  JotForm.description('input_6', 'Write Something...');
+              JotForm.newDefaultTheme = false;
+              JotForm.newPaymentUIForNewCreatedForms = false;
+                /*INIT-END*/
+              });
+            
+               JotForm.prepareCalculationsOnTheFly([null,null,null,null,null,null,{"description":"Write Something...","name":"requestingInformation","qid":"6","text":"Description","type":"control_textarea"},{"name":"7","qid":"7","text":"Submit Form","type":"control_button"},null,null,{"description":"Enter Your Name","name":"name","qid":"10","text":"Name","type":"control_fullname"},{"description":"Enter Your Email","name":"email11","qid":"11","text":"E-mail","type":"control_email"},{"description":"Enter Your Phone Number","name":"phoneNumber12","qid":"12","text":"Phone Number","type":"control_phone"},{"name":"contactUs","qid":"13","text":"Contact Us!","type":"control_head"}]);
+               setTimeout(function() {
+            JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,{"description":"Write Something...","name":"requestingInformation","qid":"6","text":"Description","type":"control_textarea"},{"name":"7","qid":"7","text":"Submit Form","type":"control_button"},null,null,{"description":"Enter Your Name","name":"name","qid":"10","text":"Name","type":"control_fullname"},{"description":"Enter Your Email","name":"email11","qid":"11","text":"E-mail","type":"control_email"},{"description":"Enter Your Phone Number","name":"phoneNumber12","qid":"12","text":"Phone Number","type":"control_phone"},{"name":"contactUs","qid":"13","text":"Contact Us!","type":"control_head"}]);}, 20); 
+            </script>
+            <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.18877" rel="stylesheet" type="text/css" />
+            <link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.18877" />
+            <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.18877" />
+            <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=5dca5ac9a5e86d17235d90c1"/>
+            <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.18877" />
+            
+              
+                
+            <form class="jotform-form" action="https://submit.jotform.com/submit/201853485033453/" method="post" name="form_201853485033453" id="201853485033453" accept-charset="utf-8" autocomplete="on">
+              <input type="hidden" name="formID" value="201853485033453" />
+              <input type="hidden" id="JWTContainer" value="" />
+              <input type="hidden" id="cardinalOrderNumber" value="" />
+              <div role="main" class="form-all">
+                <ul class="form-section page-section">
+                  <li id="cid_13" class="form-input-wide" data-type="control_head">
+                    <div class="form-header-group  header-default">
+                      <div class="header-text httac htvam">
+                        <h2 id="header_13" class="form-header" data-component="header">
+                          Contact Us!
+                        </h2>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="form-line jf-required" data-type="control_fullname" id="id_10">
+                    <label class="form-label form-label-left form-label-auto" id="label_10" for="first_10">
+                      Name
+                      <span class="form-required">
+                        *
+                      </span>
+                    </label>
+                    <div id="cid_10" class="form-input jf-required">
+                      <div data-wrapper-react="true">
+                        <span class="form-sub-label-container " style="vertical-align:top" data-input-type="first">
+                          <input type="text" id="first_10" name="q10_name[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_10 sublabel_10_first" required="" />
+                          <label class="form-sub-label" for="first_10" id="sublabel_10_first" style="min-height:13px" aria-hidden="false"> First Name </label>
+                        </span>
+                        <span class="form-sub-label-container " style="vertical-align:top" data-input-type="last">
+                          <input type="text" id="last_10" name="q10_name[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_10 sublabel_10_last" required="" />
+                          <label class="form-sub-label" for="last_10" id="sublabel_10_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="form-line jf-required" data-type="control_email" id="id_11">
+                    <label class="form-label form-label-left form-label-auto" id="label_11" for="input_11">
+                      E-mail
+                      <span class="form-required">
+                        *
+                      </span>
+                    </label>
+                    <div id="cid_11" class="form-input jf-required">
+                      <input type="email" id="input_11" name="q11_email11" class="form-textbox validate[required, Email]" size="32" value="" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_11" required="" />
+                    </div>
+                  </li>
+                  <li class="form-line jf-required" data-type="control_phone" id="id_12" data-compound-hint=",">
+                    <label class="form-label form-label-left form-label-auto" id="label_12" for="input_12_area">
+                      Phone Number
+                      <span class="form-required">
+                        *
+                      </span>
+                    </label>
+                    <div id="cid_12" class="form-input jf-required">
+                      <div data-wrapper-react="true">
+                        <span class="form-sub-label-container " style="vertical-align:top" data-input-type="areaCode">
+                          <input type="tel" id="input_12_area" name="q12_phoneNumber12[area]" class="form-textbox validate[required]" size="6" value="" data-component="areaCode" aria-labelledby="label_12 sublabel_12_area" required="" />
+                          <span class="phone-separate" aria-hidden="true">
+                             -
+                          </span>
+                          <label class="form-sub-label" for="input_12_area" id="sublabel_12_area" style="min-height:13px" aria-hidden="false"> Area Code </label>
+                        </span>
+                        <span class="form-sub-label-container " style="vertical-align:top" data-input-type="phone">
+                          <input type="tel" id="input_12_phone" name="q12_phoneNumber12[phone]" class="form-textbox validate[required]" size="12" value="" data-component="phone" aria-labelledby="label_12 sublabel_12_phone" required="" />
+                          <label class="form-sub-label" for="input_12_phone" id="sublabel_12_phone" style="min-height:13px" aria-hidden="false"> Phone Number </label>
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="form-line jf-required" data-type="control_textarea" id="id_6">
+                    <label class="form-label form-label-left form-label-auto" id="label_6" for="input_6">
+                      Description
+                      <span class="form-required">
+                        *
+                      </span>
+                    </label>
+                    <div id="cid_6" class="form-input jf-required">
+                      <textarea id="input_6" class="form-textarea validate[required]" name="q6_requestingInformation" cols="30" rows="5" data-component="textarea" required="" aria-labelledby="label_6"></textarea>
+                    </div>
+                  </li>
+                  <li class="form-line" data-type="control_button" id="id_7">
+                    <div id="cid_7" class="form-input-wide">
+                      <div style="margin-left:156px" data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+                        <button id="input_7" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+                          Submit Form
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li style="display:none">
+                    Should be Empty:
+                    <input type="text" name="website" value="" />
+                  </li>
+                </ul>
+              </div>
+              <script>
+              JotForm.showJotFormPowered = "new_footer";
+              </script>
+              <script>
+              JotForm.poweredByText = "Powered by Santushti Services";
+              </script>
+              <input type="hidden" id="simple_spc" name="simple_spc" value="201853485033453" />
+              <script type="text/javascript">
+              document.getElementById("si" + "mple" + "_spc").value = "201853485033453-201853485033453";
+              </script>
+              <div class="formFooter-heightMask">
+              </div>
+              <div class="formFooter f6">
+                
+                <div class="formFooter-rightSide">
+                  <span class="formFooter-text">
+                    We Do Free Home Loan Counseling
+                  </span>
+                  
+                </div>
+              </div>
+            </form>
+            
+
+            
+            <!-- Footer -->
+            <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+                <a href="#"><i class="fa fa-whatsapp" style="color: #39d312;"> +91 9871716430</i></a>
+                
+                <p class="w3-medium">
+                Powered by Santushti services 
+                </p>
+            </footer>
+            <div></div>
+         
+         
+          
+          
+    </body>
+</html>
