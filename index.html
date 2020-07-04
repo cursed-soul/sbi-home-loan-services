@@ -143,147 +143,7 @@ x
                 text-align: left;
                 
             }
-            body {font@media
-            input[type=text], select, textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
-            }
-
-            input[type=submit] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            }
-
-            input[type=submit]:hover {
-            background-color: #45a049;
-            }
-
-            .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-            }
-            .input-container {
-            display: -ms-flexbox; /* IE10 */
-            display: flex;
-            width: 100%;
-            margin-bottom: 15px;
-            }
-
-            .icon {
-            padding: 10px;
-            background: dodgerblue;
-            color: white;
-            min-width: 50px;
-            text-align: center;
-            }
-
-            .input-field {
-            width: 100%;
-            padding: 10px;
-            outline: none;
-            }
-
-            .input-field:focus {
-            border: 2px solid dodgerblue;
-            }
-
-            /* Set a style for the submit button */
-            .btn {
-            background-color: dodgerblue;
-            color: white;
-            padding: 15px 20px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            opacity: 0.9;
-            }
-
-            .btn:hover {
-            opacity: 1;
-            }
-            body {font-family: Arial, Helvetica, sans-serif;}
-            * {box-sizing: border-box;}
-
-            /* Button used to open the contact form - fixed at the bottom of the page */
-            .open-button {
-              background-color: #555;
-              color: white;
-              padding: 16px 20px;
-              border: none;
-              cursor: pointer;
-              opacity: 0.8;
-              position: sticky;
-              top: 23px;
-              right: 28px;
-              width: 280px;
-            }
             
-            /* The popup form - hidden by default */
-            .form-popup {
-              display: none;
-              position: sticky;
-              place-content: 0;
-              right: 15px;
-              border: 3px solid #f1f1f1;
-              z-index: 9;
-            }
-            
-            /* Add styles to the form container */
-            .form-container {
-              max-width: 300px;
-              padding: 10px;
-              background-color: white;
-            }
-            
-            /* Full-width input fields */
-            .form-container input[type=text], .form-container input[type=password] {
-              width: 100%;
-              padding: 15px;
-              margin: 5px 0 22px 0;
-              border: none;
-              background: #f1f1f1;
-            }
-            
-            /* When the inputs get focus, do something */
-            .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-              background-color: #ddd;
-              outline: none;
-            }
-            
-            /* Set a style for the submit/login button */
-            .form-container .btn {
-              background-color: #4CAF50;
-              color: white;
-              padding: 16px 20px;
-              border: none;
-              cursor: pointer;
-              width: 100%;
-              margin-bottom:10px;
-              opacity: 0.8;
-            }
-            
-            /* Add a red background color to the cancel button */
-            .form-container .cancel {
-              background-color: red;
-            }
-            
-            /* Add some hover effects to buttons */
-            .form-container .btn:hover, .open-button:hover {
-              opacity: 1;
-            }
-                    
-
         </style>
          
     </head>
@@ -300,45 +160,9 @@ x
                     element.classList.toggle("dark-mode");
                 } 
             </script>
-            <button class="open-button" onclick="openForm()">Open Form</button>
+            
 
-            <div class="form-popup" id="myForm">
-            <form action="action_page.php" class="form-container">
-                <h2>Contact Us</h2>
-                <div class="input-container">
-                  <i class="fa fa-user icon"></i>
-                  <input class="input-field" type="text" placeholder="Name" name="name">
-                </div>
-              
-                <div class="input-container">
-                  <i class="fa fa-envelope icon"></i>
-                  <input class="input-field" type="text" placeholder="Email" name="email">
-                </div>
-                
-                <div class="input-container">
-                  <i class="fa fa-phone icon"></i>
-                  <input class="input-field" type="mobile number" placeholder="Number" name="num">
-                </div>
-                <div>
-                <label for="subject">Description</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; width: 500px;"></textarea>
-                </div>
-                <input type="submit" value="Submit">
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            </form>
-            </form>
-            </div>
-
-            <script>
-                function openForm() {
-                  document.getElementById("myForm").style.display = "block";
-                }
-                
-                function closeForm() {
-                  document.getElementById("myForm").style.display = "none";
-                }
-                </script>
-                
+           
             
             
              </nav>
@@ -419,7 +243,7 @@ x
             }
             </script>
             
-            
+            <
             
         
             
